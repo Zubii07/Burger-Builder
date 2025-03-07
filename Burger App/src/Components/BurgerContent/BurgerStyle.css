@@ -1,0 +1,167 @@
+/* Main Container */
+.burgerContent {
+    width: 100%;
+    max-width: 700px; /* Maintain a max width */
+    margin: 5% auto; /* Center the content */
+    padding: 0 15px; /* Add some padding for smaller devices */
+}
+
+/* Burger Ingredients Section */
+.burgerIngredients {
+    height: 290px; /* Fixed height */
+    width: 100%;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.burgerIngredients p {
+    text-align: center;
+    font-size: 1.2em; /* Responsive font size */
+}
+
+/* Ingredients Block */
+.ingredientsBlock {
+    background-color: #f4b46c;
+    margin: 30px auto 0;
+    max-width: 90%; /* Adjust max-width for smaller devices */
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ingredientsBlock h2 {
+    font-size: 1.5em; /* Responsive font size */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ingredientsBlock p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em; /* Responsive font size */
+    text-transform: uppercase;
+}
+
+/* Ingredient Buttons */
+.ingrBtns {
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingrBtn {
+    border: 0;
+    background-color: #c17116;
+    color: #fff;
+    padding: 10px; /* Increased padding for better touch targets */
+    cursor: pointer;
+    width: 45%; /* Responsive button width */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.ingrBtn:hover {
+    background-color: #a15d13; /* Darken on hover */
+}
+
+/* Burger Top and Bottom */
+.topside,
+.bottomside,
+.lettuceSide,
+.TomatoSide,
+.CheeseSide,
+.MeatSide {
+    background-size: cover; /* Cover ensures proper aspect ratio */
+    width: 100%; /* Full width */
+    display: table;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.topside {
+    background-image: url(../Assets/top.jpg);
+    height: 100px; /* Height remains the same */
+}
+
+.bottomside {
+    background-image: url(../Assets/bottom.jpg);
+    height: 90px; /* Height remains the same */
+}
+
+.lettuceSide {
+    background-image: url(../Assets/lettuse.jpg);
+    height: 20px;
+}
+
+.TomatoSide {
+    background-image: url(../Assets/tomato.jpg);
+    height: 20px;
+}
+
+.CheeseSide {
+    background-image: url(../Assets/cheese.jpg);
+    height: 20px;
+}
+
+.MeatSide {
+    background-image: url(../Assets/meat.jpg);
+    height: 20px;
+}
+
+/* Place Order Button */
+.placeOrderBtn {
+    background-color: #c17116;
+    color: white;
+    padding: 12px; /* Increased padding for larger buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1em; /* Responsive font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.placeOrderBtn:hover {
+    background-color: #a15d13; /* Darken on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .burgerContent {
+        margin-top: 10%; /* Reduce margin for smaller devices */
+        padding: 0 10px; /* Less padding */
+    }
+
+    .burgerIngredients {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .ingredientsBlock {
+        max-width: 95%; /* Wider on small screens */
+        padding: 15px; /* Less padding */
+    }
+
+    .ingrBtn {
+        padding: 10px; /* Maintain size */
+        width: 48%; /* Adjust width for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .burgerContent {
+        margin-top: 5%; /* Further reduce margin */
+    }
+
+    .ingredientsBlock h2 {
+        font-size: 1.3em; /* Smaller font size */
+    }
+
+    .ingredientsBlock p {
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .placeOrderBtn {
+        font-size: 0.9em; /* Smaller font size */
+    }
+}
